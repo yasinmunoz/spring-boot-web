@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
-	//Get	
+	//Get: consultar información en el servidor
+	
 	@GetMapping({"/index", "/", "/home"}) //http://localhost:8080/index
 	public String index(Model model) {
 		

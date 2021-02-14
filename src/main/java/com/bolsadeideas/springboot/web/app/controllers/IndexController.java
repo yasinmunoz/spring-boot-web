@@ -18,4 +18,20 @@ public class IndexController {
 		
 	}
 	
+	@GetMapping({"/contenido"}) //http://localhost:8080/contenido
+	public String contenido(Model model) {
+		
+		model.addAttribute("titulo", "Come Mierdas");
+		return "contenido"; //carga la vista index
+		
+	}
+	
+	@GetMapping({"/contacto"}) //http://localhost:8080/contacto
+	public String contacto(Model model) {
+		
+		model.addAttribute("titulo", "Come Mierdas");
+		return "contacto"; //carga la vista index
+		
+	}
+	
 }
